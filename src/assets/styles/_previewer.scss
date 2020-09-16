@@ -1,0 +1,33 @@
+.previewer {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 1rem;
+
+  &__input {
+    display: grid;
+    grid-template-rows: auto 1fr;
+
+    &-area {
+      background-color: $dark-secondary;
+      border: none;
+      color: $primary;
+    }
+
+    &-dropdown {
+      background-color: $dark-secondary;
+      border: none;
+      color: $primary;
+      font-family: monospace;
+      font-size: 0.875rem;
+    }
+
+    &-header {
+      align-content: center;
+      background-color: $dark-secondary;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+    }
+  }
+}

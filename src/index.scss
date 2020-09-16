@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font: 20px/1 sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+blockquote {
+  background-color: #fff;
+  border-left: 0.25rem solid #666;
+  color: #222;
+  font-style: italic;
+  margin-left: 0;
+  padding: 0.5rem 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}

@@ -1,0 +1,54 @@
+@import './assets/styles/variables', './assets/styles/header',
+  './assets/styles/previewer', './assets/styles/theme',
+  './assets/styles/wrapper';
+
+.app {
+  background-color: $dark-secondary;
+  color: $light-secondary;
+
+  &.light {
+    background-color: $light-secondary;
+    color: $dark-secondary;
+
+    .previewer {
+      &__input {
+        &-area {
+          background-color: $light-secondary;
+          color: $dark-secondary;
+        }
+
+        &-dropdown {
+          background-color: $light-secondary;
+          color: $dark-secondary;
+        }
+
+        &-header {
+          background-color: $light-secondary;
+        }
+      }
+      &-output {
+        overflow-x: scroll;
+      }
+    }
+
+    .header {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+
+    .theme-toggle {
+      align-items: center;
+      display: flex;
+
+      &__button {
+        background-color: transparent;
+        border: none;
+        color: $dark-secondary;
+        font-size: 1rem;
+        margin: 0 0.5rem;
+      }
+    }
+  }
+}

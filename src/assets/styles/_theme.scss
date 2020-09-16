@@ -1,0 +1,17 @@
+.theme-toggle {
+  align-items: center;
+  display: flex;
+
+  &__button {
+    background-color: transparent;
+    border: none;
+    color: $light-secondary;
+    font-family: monospace;
+    font-size: 1rem;
+    margin: 0 0.5rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
