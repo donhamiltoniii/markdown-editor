@@ -84,11 +84,14 @@ export default function App() {
                 </option>
               </select>
             </header>
-            <textarea
-              className="previewer__input-area"
-              onChange={updateMarkdown}
-              value={markdown}
-            ></textarea>
+            <div className="previewer__input-area">
+              <textarea
+                className="previewer__input-area"
+                data-role={'none'}
+                onChange={updateMarkdown}
+                value={markdown}
+              />
+            </div>
           </div>
           <div className="previewer__output">
             <ReactMarkdown renderers={{ code: CodeBlock }} source={markdown} />

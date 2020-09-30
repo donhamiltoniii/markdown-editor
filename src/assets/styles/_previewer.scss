@@ -2,6 +2,7 @@
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
+  height: 100%;
   padding: 0 1rem;
 
   &__input {
@@ -9,9 +10,17 @@
     grid-template-rows: auto 1fr;
 
     &-area {
-      background-color: $dark-secondary;
-      border: none;
-      color: $primary;
+      overflow-y: scroll;
+
+      textarea {
+        background-color: $dark-secondary;
+        border: none;
+        color: $primary;
+        height: 70vh;
+        overflow-y: scroll;
+        resize: none;
+        width: 100%;
+      }
     }
 
     &-dropdown {
@@ -20,6 +29,8 @@
       color: $primary;
       font-family: monospace;
       font-size: 0.875rem;
+      position: sticky;
+      top: 0;
     }
 
     &-header {
@@ -29,5 +40,10 @@
       justify-content: center;
       padding: 1rem;
     }
+  }
+
+  &__output {
+    height: 80vh;
+    overflow-y: scroll;
   }
 }

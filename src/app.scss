@@ -5,6 +5,9 @@
 .app {
   background-color: $dark-secondary;
   color: $light-secondary;
+  display: grid;
+  grid-template-rows: auto, 1fr;
+  height: 100vh;
 
   &.light {
     background-color: $light-secondary;
@@ -15,6 +18,7 @@
         &-area {
           background-color: $light-secondary;
           color: $dark-secondary;
+          overflow-y: scroll;
         }
 
         &-dropdown {
@@ -27,15 +31,8 @@
         }
       }
       &-output {
-        overflow-x: scroll;
+        overflow-y: scroll;
       }
-    }
-
-    .header {
-      align-items: center;
-      display: flex;
-      justify-content: space-between;
-      padding: 1rem;
     }
 
     .theme-toggle {
